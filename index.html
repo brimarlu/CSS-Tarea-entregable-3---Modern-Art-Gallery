@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CSS Tarea entregable 1 - Modern Art Gallery</title>
+        <title>CSS Tarea entregable 3 - Modern Art Gallery</title>
 
         <meta charset="UTF-8" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +15,51 @@
   <body>
        
     <main>
-        
+       <div class="hero">
+        <div class="hero__image">
+            <img src="/img/hero-image-mobile.png" alt="Modern Art Gallery">
+            <h1 class="hero__title">Modern Art Gallery</h1>
+            <p class="hero__description">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+            <a href="#" class="btn-location">
+                <span class="btn-location__text">OUR LOCATION</span>
+                <span class="btn-location__icon">
+                    <img src="/img/arrow.svg" alt="">
+                </span>
+            </a>
+        </div>
+       </div>
+
+       <section class="gallery">
+           <img class="gallery__image" src="/img/main-image-1.png" alt="Gallery Image 1">
+           <h2 class="gallery__title">Your Day at the Gallery</h2>
+           <p class="gallery__description">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
+           <img class="gallery__image" src="/img/main-image-2.png" alt="Gallery Image 2">
+           <img class="gallery__image" src="/img/main-image-3.png" alt="Gallery Image 3">
+       </section> 
+
+       <article class="welcome">
+           <h2 class="welcome__title">COME & BE INSPIRED</h2>
+           <p class="welcome__description">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+       </article>
 
     </main>
+
+    <footer class="footer">
+        <h3 class="footer__title">Modern Art Gallery</h3>
+        <p class="footer__text">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+        <div class="footer__icons">
+            <a href="#" class="footer__icon">
+                <img src="/img/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" class="footer__icon">
+                <img src="/img/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" class="footer__icon">
+                <img src="/img/x.svg" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+
 
     <script type="module" src="/main.js"></script>
   </body>

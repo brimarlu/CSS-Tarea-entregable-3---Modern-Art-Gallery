@@ -1,11 +1,9 @@
 @use "../abstracts/abstracts" as *; 
 
 html * {
-    font-family: $font; 
+    font-family: $font-default; 
 }
  
 body {
     overflow-x: hidden;
-    min-width: 1920px;
-    max-width: 1920px;
 }
