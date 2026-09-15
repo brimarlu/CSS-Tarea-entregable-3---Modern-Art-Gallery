@@ -1,0 +1,41 @@
+@use "../abstracts/abstracts" as *; 
+
+.footer {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 48px 32px;
+
+    &__logo {
+        margin-bottom: 38px;
+        img {
+            width: 110px;
+        } 
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 38px;
+    }
+    &__icons {
+        color: $color-white;
+        text-decoration: none;
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+    }
+
+}

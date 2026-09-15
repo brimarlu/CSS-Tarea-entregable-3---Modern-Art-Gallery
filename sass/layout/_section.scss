@@ -1,0 +1,62 @@
+@use "../abstracts/abstracts" as *; 
+
+.gallery {
+    padding: 0 16px;
+
+    &__image-1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+
+    }
+
+    &__description {
+        font-family: $font-default;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: 32px;
+        color: $color-gray;
+    }
+
+     &__image-2, &__image-3 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+        
+}
+
+.welcome {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 48px 24px;
+    color: $color-white;
+    background-color: $color-black;
+    margin-bottom: 120px;
+
+    &__title {
+        font-family: $font-title;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        font-family: $font-default;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+}
