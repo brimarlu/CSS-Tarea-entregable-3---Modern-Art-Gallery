@@ -1,4 +1,3 @@
-@use "../abstracts/variables" as *;
 
 @mixin breakpoint($bp) {
   @if $bp == tablet {
