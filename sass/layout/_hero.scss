@@ -18,10 +18,31 @@
             right: 0;
         }
 
+        @media (min-width: $bp-desktop) {
+            display: inline-block;
+            position: relative;
+        }
+
     }
 
+    
     &__image {
         position: relative;
+        @media (min-width: $bp-desktop) {
+            display: flex;
+        }
+
+        &-block {
+            display: none;
+            @media (min-width: $bp-desktop) {
+            width: 52%;
+            display: block;
+            background-color: $color-black;
+            margin-bottom: 32px;
+        }
+
+        }
+
 
         &-mobile {
             width: 100%;
@@ -38,11 +59,19 @@
             display: none;
             @media (min-width: $bp-tablet) {
                 width: 60%;
-                max-height: 100%;
+                max-height: auto;
                 object-fit: cover;
                 display: block;
                 margin-bottom: 32px; 
             }
+            @media (min-width: $bp-desktop) {
+                width: 38%;
+                max-height: auto;
+                object-fit: cover;
+                display: block;
+                margin-bottom: 32px; 
+            }
+
         }   
 
     }
@@ -56,6 +85,15 @@
         padding: 0 16px;
         margin-bottom: 32px;
         text-transform: uppercase;
+        @media (min-width: $bp-desktop) {
+            position: absolute;
+            color: $color-white;
+            font-size: 82px;
+            line-height: 75px;
+            left: -194%;
+            top: 21%;
+        }
+
     }
 
     &__description {
@@ -66,6 +104,12 @@
         line-height: 28px;
         margin-bottom: 32px;
         padding: 0 16px;
+        @media (min-width: $bp-desktop)  {
+            width: 320px;
+            position: absolute;
+            right: 32%;
+            top: 23%;
+        }
     }
 
     .btn-location {
@@ -73,7 +117,14 @@
         align-items: stretch; 
         text-decoration: none;
         padding: 0 16px;
+        @media (min-width: $bp-desktop)  {
+            width: 320px;
+            position: absolute;
+            right: 32%;
+            top: 50%;
         }
+           
+    }
 
         .btn-location__text {
             font-family: $font-title;
@@ -92,26 +143,28 @@
         .btn-location__icon {
             background-color: $color-beige;
             padding: 24px;
-            transition: background-color 0.3s ease;
             
             img {
                 width: 10px;
                 height: auto;
-                transition: transform 0.3s ease; 
                 margin: 0;
             }
         }
 
+    .btn-location:hover {
 
-        &:hover  {
+        @media (min-width: $bp-desktop) {
+            .btn-location__text {
+                background-color: $color-beige;
+            }
             .btn-location__icon {
-                background-color: #ba7f56; 
+                background-color: $color-black; 
                 
                 img {
-                    transform: translateX(4px); 
+                    background-color: $color-black;
                 }
-            }
-    
+            }    
         }
+    }    
 
 }
